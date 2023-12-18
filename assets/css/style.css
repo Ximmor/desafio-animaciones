@@ -1,0 +1,210 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif ;
+
+}
+/*Vista Mobile*/
+.todo{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 30fr 1fr;
+    grid-template-areas: 
+    "menu"
+    "main"
+    "footer";
+}
+/*Menu*/
+menu{
+    grid-area: menu;
+    background-color: rgb(218, 130, 156);
+    margin: 0%;
+    padding: 0;
+}
+.logo img {
+    max-width: 100%; /* Hace que la imagen no sea más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+}
+
+.r{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.titulo-principal{
+ font-family: 'Bebas Neue', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-size:15px;
+}
+.mnu{
+    display: flex;
+    justify-content: flex-end;
+}
+.mnu p{
+    padding: 3px;
+    font-size: 12px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Main*/
+main{
+    grid-area: main;
+    background-color:rgb(246, 238, 9)
+}
+
+.titulo{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+.producto{
+    border: solid rgb(243, 14, 159);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 250px;
+}
+.producto img{
+    height: 50%;
+    width: 240px;
+    margin-top: 3px;
+    filter: grayscale(100%);
+    transition: filter 0,3s ease-in-out;
+}
+.producto img:hover{
+    filter: grayscale(0%);
+}
+.nombre{
+    margin-bottom: 5px;
+    border-top: solid rgb(224, 79, 47);
+    width: 100%;
+    text-align: center;
+}
+.precio{
+    margin-top: 0;
+}
+.ofertas{
+   padding-top: 40px;
+   background-color: rgb(224, 109, 15);
+}
+.p-oferta{
+    color: rgb(234, 20, 20);
+    margin-bottom: 3px;
+    margin-top: 10px;
+    font-size: small;
+}
+.rebaja{
+    margin-top: 0%;
+}
+.media{
+    display: none;
+}
+
+/*Footer*/
+footer{
+    grid-area: footer;
+    background-color: #239e08;
+    font-size: medium;
+
+}
+.ftr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.derechos{
+    margin: 0%;
+    font-size: 7px;
+}
+.contacto{
+    font-size: 15px
+}
+.rrss{
+    font-size: 20px;
+    color: rgb(185, 97, 97);
+}
+
+/*Vista Escritorio*/
+@media (min-width:576px){}
+.todo{
+    min-height: 100vh;
+    grid-template-columns: 2fr 10fr ;
+    grid-template-rows: 19fr 1fr;
+    grid-template-areas:
+    "menu main"
+    "footer footer";
+}
+/*Menu*/
+.mnu{
+    display: flex;
+    flex-direction: column;
+}
+.mnu p{
+    font-size: 17px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-principal{
+    font-size: 25px;
+    margin-top: 0%;
+    border-bottom: solid rgb(222, 126, 168)
+}
+.r{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+/*Main*/
+.todos{
+    display: flex;
+}
+.producto{
+    height: 400px;
+    width: 300px;
+}
+.media{
+    display: contents;
+    display: flex;
+}
+.producto img{
+    height: 65%;
+width: 290px;
+}
+/*Footer*/
+.derechos{
+    font-size: 15px;
+}
+.contacto{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.rrss{
+    font-size: 30px;
+    color: rgb(224, 106, 159)
+}
+
